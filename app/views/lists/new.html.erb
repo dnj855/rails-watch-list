@@ -1,5 +1,11 @@
-<h1>Create a new list</h1>
-<%= simple_form_for @list do |f| %>
-  <%= f.input :name %>
-  <%= f.submit %>
-<% end %>
+<div class="banner" id="new_banner">
+  <div class="container">
+    <h1 class="text-center">Create a new list</h1>
+  </div>
+</div>
+<div class="container mt-4">
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.submit class:"btn btn-flat" %>
+  <% end %>
+</div>

@@ -13,7 +13,7 @@
         <%= image_tag bookmark.movie.poster_url %>
         <div class="card-trip-infos">
           <div>
-            <h2><%= bookmark.movie.title %></h2>
+            <h2><%= bookmark.movie.title %> • <%= bookmark.movie.rating.round(1) %> <i class="fa-solid fa-star"></i></h2>
             <p><%= bookmark.movie.overview %></p>
           </div>
         </div>
