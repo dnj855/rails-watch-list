@@ -1,6 +1,13 @@
-<h1>All Lists</h1>
-<ul>
+<div class="banner" id="index_banner">
+  <div class="container">
+    <h1 class="text-center">All our movie lists</h1>
+    <p class="text-center">View and review all your favorite movies</p>
+  </div>
+</div>
+<div class="container mt-4 index-wrapper">
   <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
+    <%= link_to  list_path(list), class:"card-category" do %>
+      <p><%= list.name %></p>
+    <% end %>
   <% end %>
-</ul>
+</div>
