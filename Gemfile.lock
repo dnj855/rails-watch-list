@@ -112,10 +112,6 @@ GEM
       sassc (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    hotwire-livereload (1.4.1)
-      actioncable (>= 6.0.0)
-      listen (>= 3.0.0)
-      railties (>= 6.0.0)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.0.3)
@@ -131,9 +127,6 @@ GEM
       activesupport (>= 5.0.0)
     json (2.8.2)
     language_server-protocol (3.17.0.3)
-    listen (3.9.0)
-      rb-fsevent (~> 0.10, >= 0.10.3)
-      rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.6.1)
     loofah (2.23.1)
       crass (~> 1.0.2)
@@ -223,15 +216,8 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.2.1)
-    rb-fsevent (0.11.2)
-    rb-inotify (0.11.1)
-      ffi (~> 1.0)
     rdoc (6.8.1)
       psych (>= 4.0.0)
-    redis (5.3.0)
-      redis-client (>= 0.22.0)
-    redis-client (0.22.2)
-      connection_pool
     regexp_parser (2.9.2)
     reline (0.5.11)
       io-console (~> 0.5)
@@ -322,14 +308,12 @@ DEPENDENCIES
   bootstrap (~> 5.2)
   debug
   font-awesome-sass (~> 6.1)
-  hotwire-livereload
   importmap-rails
   jbuilder
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.5)
   rails-controller-testing
-  redis (>= 4.0.1)
   rspec-rails
   rubocop
   sassc-rails
