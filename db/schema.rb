@@ -40,5 +40,5 @@ ActiveRecord::Schema[7.1].define(version: 2024_11_28_095850) do
   end
 
   add_foreign_key "bookmarks", "lists"
-  add_foreign_key "bookmarks", "movies", on_delete: :restrict
+  add_foreign_key "bookmarks", "movies"
 end
