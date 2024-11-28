@@ -14,9 +14,10 @@ require 'json'
 url = 'https://tmdb.lewagon.com/movie/top_rated'
 movies = JSON.parse(URI.parse(url).read)
 
+Bookmark.destroy_all
+Review.destroy_all
 Movie.destroy_all
 List.destroy_all
-Bookmark.destroy_all
 
 movies['results'].each do |movie|
   Movie.create!(
