@@ -6,7 +6,9 @@
 </div>
 <div class="container mt-4 index-wrapper">
   <% @lists.each do |list| %>
-    <%= link_to  list_path(list), class:"card-category" do %>
+    <%= link_to list_path(list),
+                class:"card-category",
+                style:"background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(#{ cl_image_path list.photo.key, crop: :fill });"  do %>
       <p><%= list.name %></p>
     <% end %>
   <% end %>
