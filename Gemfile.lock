@@ -99,6 +99,7 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     diff-lcs (1.5.1)
+    dotenv (3.1.4)
     drb (2.2.1)
     erubi (1.13.0)
     execjs (2.10.0)
@@ -307,6 +308,7 @@ DEPENDENCIES
   bootsnap
   bootstrap (~> 5.2)
   debug
+  dotenv
   font-awesome-sass (~> 6.1)
   importmap-rails
   jbuilder
